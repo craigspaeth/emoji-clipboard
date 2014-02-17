@@ -1,0 +1,27 @@
+{
+  "name": "emoji-clipboard",
+  "version": "0.0.1",
+  "description": "Pulls an emojicon from emojicons.com and copies it to your clipboard.",
+  "keywords": [
+    "emojicons",
+    "emoji",
+    "clipboard",
+    "copy",
+    "paste"
+  ],
+  "bin": {
+    "emojic": "./bin/emojic.js"
+  },
+  "author": {
+    "name": "Craig Spaeth",
+    "email": "craigspaeth@gmail.com",
+    "url": "http://craigspaeth.com"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+	"dependencies": {
+    "superagent": "*",
+    "cheerio": "*"
+	}
+}
