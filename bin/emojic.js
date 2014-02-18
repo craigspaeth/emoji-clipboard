@@ -12,7 +12,7 @@ request.get('http://emojicons.com/e/' + emoji).end(function(res) {
     request.get('http://emojicons.com/tag/' + emoji).end(function(res) {
       var $ = cheerio.load(res.text);
       var text = $('.emoticon-item:first-child textarea').text().trim();
-      text ? cp(text) : console.log("No emojis found (◞‸◟；)");
+      text ? cp(text) : console.log("No emojis found. (◞‸◟；)");
     });
   } else {
     var $ = cheerio.load(res.text);
@@ -22,6 +22,6 @@ request.get('http://emojicons.com/e/' + emoji).end(function(res) {
 
 var cp = function (text) {
   exec("echo \"" + text + "\" | pbcopy", function() {
-    console.log("Copied!");
+    console.log("Copied! " + text);
   });
 }

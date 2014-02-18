@@ -1,6 +1,6 @@
 {
   "name": "emoji-clipboard",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Pulls an emojicon from emojicons.com and copies it to your clipboard.",
   "keywords": [
     "emojicons",
